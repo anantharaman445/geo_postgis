@@ -51,6 +51,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :geo_app, GeoApp.Repo,
   adapter: Ecto.Adapters.Postgres,
+  types: GeoApp.PostgresTypes,
   username: "anantha",
   password: "password",
   database: "simple_phoenix_app_dev",
